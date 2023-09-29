@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Worlds Without Number Character Creator!</h1>
+        <div style="border:5px solid black; width:100px;">
+            <h3>Stats:</h3>
+            <p id="statBox">
+                Str:<br>
+                Dex:<br>
+                Con:<br>
+                Int:<br>
+                Wis:<br>
+                Cha:<br>
+            </p>
+        </div>
+
+        <button onclick="randomizeStats()">Roll for Stats!</button>
+
+        <form>
+            <label for="name">Input your <strong>Name</strong>:</label>
+            <input type="text" name="name"><br>
+            
+            <label for="class">Choose your <strong>Class</strong>:</label>
+            <select name="class" id="class">
+              <option>Warrior</option>
+              <option>Expert</option>
+              <option>Mage</option>
+              <option>Warrior/Mage</option>
+              <option>Warrior/Expert</option>
+              <option>Mage/Expert</option>
+              <option>Mage/Mage</option>
+            </select>
+            <br>
+            What <strong>Ability Score</strong> would you like to raise to 14:<br>
+            <input type="radio" id="str" name="raisedScore" value="HTML">
+            <label for="str">Str</label>
+            <input type="radio" id="dex" name="raisedScore" value="HTML">
+            <label for="dex">Dex</label>
+            <input type="radio" id="con" name="raisedScore" value="HTML">
+            <label for="con">Con</label>
+            <input type="radio" id="int" name="raisedScore" value="HTML">
+            <label for="int">Int</label>
+            <input type="radio" id="wis" name="raisedScore" value="HTML">
+            <label for="wis">Wis</label>
+            <input type="radio" id="cha" name="raisedScore" value="HTML">
+            <label for="cha">Cha</label>
+            <br>
+            <input type="submit" value="enter">
+        </form>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
